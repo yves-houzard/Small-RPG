@@ -1,0 +1,76 @@
+body {
+  background: url('/img/grass.png');
+}
+.logo__zelda{
+  width: 300px;
+  margin: 3rem auto;
+
+}
+.logo__zelda-img{
+  width: 100%;
+}
+#board{
+  display: flex;
+  flex-direction: column;
+}
+.cell{
+  width: 70px;
+  height: 70px;
+  background: url('/img/Gravel.png');
+  display: inline-block;
+  box-shadow: 0px 0px 8px 0px black;
+  border-radius: 5px;
+}
+.row{
+ height: 70px;
+}
+
+.player{
+  width: 28px;
+  height: 32px;
+  background: url('/img/sprite.png');
+  background-position-y: 64px;
+  margin: 20px;
+}
+
+.chest{
+  width: 35px;
+  height: 40px;
+  background: url('/img/chest.png');
+  margin: 15px ;
+}
+.chest.winner{
+  background-position: 70px 105px;
+}
+.row{
+  display: flex;
+  margin: auto;
+}
+
+.player.up{
+  background-position-y: 160px;
+}
+.player.right{
+  background-position-y: 64px;
+}
+.player.down{
+  background-position-y: 0px;
+}
+.player.left{
+  background-position-y: 96px;
+}
+
+.button__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.button{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
